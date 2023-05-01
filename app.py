@@ -1,6 +1,10 @@
-from flask import Flask
+from flask import Flask 
 app = Flask(__name__)
 
 @app.route("/")
-def index():
-    return "<h1>Hello World!</h1>"
+def home():
+    return "<h2>Flask Home Page</h2>";
+    
+@app.route("/about")
+def about():
+        return "<h2>The About Page</h2>";
